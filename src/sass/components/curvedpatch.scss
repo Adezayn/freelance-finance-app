@@ -1,0 +1,18 @@
+.curvedpatch{
+    background-color: #fff;
+    border: 0.2px solid #554DDE;
+    border-radius: 50px;
+    padding: 0 40px;
+
+    & .small_text{
+         color: black;
+         font-size: 1rem;
+         font-weight: 300;
+    }
+
+    & .large_text{
+        color: #554DDE;
+        font-size: 2.5rem;
+        font-weight: 600;
+   }
+}
