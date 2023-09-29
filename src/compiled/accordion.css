@@ -1,0 +1,9 @@
+.accord {
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-shadow: -1px 1px 0px -1px #afafb7;
+}/*# sourceMappingURL=accordion.css.map */

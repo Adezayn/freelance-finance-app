@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
+import '../../compiled/footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
     <div>
         <img src={logo} alt="logo in bigger size"/>
         <p>Copyright © 2020 Draft LLC.</p>

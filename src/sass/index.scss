@@ -1,7 +1,5 @@
 @forward 'abstracts';
 
-@forward 'globals';
+// @forward 'globals';
 
-// @import "layout/header";
-
-// @import "pages/landingPage";
+@forward 'pages';

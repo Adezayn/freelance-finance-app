@@ -1,8 +1,10 @@
 .curvedpatch {
   background-color: #fff;
-  border: 0.2px solid #554DDE;
+  border: 0.1px solid #a9a5ed;
   border-radius: 50px;
   padding: 0 40px;
+  width: 150px;
+  box-shadow: -1px 1px 5px -1px #afafb7;
 }
 .curvedpatch .small_text {
   color: black;
