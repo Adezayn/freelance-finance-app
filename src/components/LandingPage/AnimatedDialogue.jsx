@@ -8,7 +8,7 @@ const AnimatedDialogue = () => {
            <div className='animateddialogue'>
 				{/* <!-- this section will be having animations for the chat -->
 				<!-- 1-flex innermost container --> */}
-				<div className='display'>
+				<div className='display one'>
 					<img src={femaleImg} alt="female"/>
 					<div className='display_inner'>
 						<div className='representative'>
@@ -19,7 +19,7 @@ const AnimatedDialogue = () => {
 				</div>
 	           
 				{/* <!-- 2-flex innermost container --> */}
-				<div className='reverse_display'>
+				<div className='reverse_display two'>
 					<img src={maleImg} alt="male"/>
 					<div className='display_inner'>
 						<div className='customer'>
@@ -30,7 +30,7 @@ const AnimatedDialogue = () => {
 				</div>
 
 				{/* <!-- 3-flex innermost container --> */}
-				<div className='display'>
+				<div className='display three'>
 					<img src={femaleImg} alt="female"/>
 					<div className='display_inner'>
 						<div className='representative'>
