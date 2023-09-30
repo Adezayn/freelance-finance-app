@@ -5,6 +5,7 @@ import arrowRight from '../../assets/arrow-right.svg';
 import profileImage from '../../assets/profile-images.svg';
 import themeImg from '../../assets//Themes.svg';
 import checkIcon from '../../assets/check-icon.svg';
+import grayCheckIcon from '../../assets/gray-check-icon.svg';
 import '../../compiled/main.css';
 import CurvedPatch from '../CurvedPatch';
 import AnimatedDialogue from './AnimatedDialogue';
@@ -110,8 +111,8 @@ const MainContent = () => {
 						{/* <!-- check and text list --> */}
 						{arrayOfBenefits.map((e,i)=>{
                           return(
-							<div className='checkbox_list' key={i}>
-								<img src={checkIcon} alt="check"/>
+							<div className={`checkbox_list ${i >= 5 && 'graycheck'}`} key={i}>
+								<img src={i < 5 ? checkIcon : grayCheckIcon} alt="check"/>
 								<p>{e}</p>
 						    </div>
 						  )})}

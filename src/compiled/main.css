@@ -34,7 +34,8 @@
 }
 .main_container__section_two__nextInner {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
 }
 .main_container__section_two__inner_two {
   width: 35%;
@@ -170,4 +171,8 @@
 .checkbox_list p {
   font-size: 0.9rem;
   text-align: justify;
+}
+
+.graycheck {
+  color: #afafb7;
 }/*# sourceMappingURL=main.css.map */

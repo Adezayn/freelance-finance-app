@@ -48,10 +48,10 @@
         //  also for inner_one but avoiding deeply nesting
          &__nextInner{
             display: flex;
-            // align-items: center;
+            justify-content: center;
             // justify-content: space-around;
             // background-color: #000;
-            gap: 30px;
+            gap: 20px;
          }
          &__secondInner{
             // width: 'fit-content';
@@ -210,4 +210,7 @@
         font-size: 0.9rem;
         text-align: justify;
     }
+ }
+ .graycheck{
+    color:#afafb7
  }

@@ -1,9 +1,9 @@
 .curvedpatch {
   background-color: #fff;
-  border: 0.1px solid #a9a5ed;
+  border: 0.1px solid #c7c5ed;
   border-radius: 50px;
-  padding: 30px;
-  width: 250px;
+  padding: 20px 0;
+  width: 200px;
   box-shadow: -1px 1px 5px -1px #afafb7;
 }
 .curvedpatch .small_text {
@@ -13,6 +13,6 @@
 }
 .curvedpatch .large_text {
   color: #554DDE;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }/*# sourceMappingURL=curvedpatch.css.map */
