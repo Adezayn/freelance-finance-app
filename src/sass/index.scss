@@ -1,5 +1,8 @@
+
 @forward 'abstracts';
 
-// @forward 'globals';
+@forward 'globals';
 
-@forward 'pages';
+@import 'pages';
+
+@import 'components';

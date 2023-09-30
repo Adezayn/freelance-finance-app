@@ -1,4 +1,22 @@
 .footer {
   background-color: #CAD6F1;
   margin-top: 10rem;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: start;
+}
+.footer_content_one {
+  width: 40%;
+}
+.footer_content_one img {
+  padding-bottom: 20px;
+}
+.footer_content_two {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_content_two_inner_content p {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=footer.css.map */

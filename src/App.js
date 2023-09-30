@@ -1,4 +1,5 @@
 import LandingPage from './pages/LandingPage';
+import './compiled/index.css';
 
 function App() {
   return (

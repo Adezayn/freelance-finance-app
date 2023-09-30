@@ -98,22 +98,19 @@ const MainContent = () => {
 			<div  className='main_container__section_four__two'> 
 				{/* <!-- sect-1 --> */}
 				<div className='price_card'>
-					<p>Free</p>
-					<p>$0/m</p>
-					<p>Manage your business with a simple and efficient account.</p>
-					<button>
-						{/* <!-- nude button --> */}
-						Get Started
-					</button>
+					<p className='parent_text'>Free</p>
+					<p className='sub_text'>$0/m</p>
+					<p className='small_text'>Manage your business with a simple and efficient account.</p>
+					<Button children="Get Started" color="nudeborderblue"/>
 					<div>
 						<img src={creditCard} alt="credit card" className='price_card__main_img'/>
 						<img src={themeImg} alt="theme" className='price_card__sub_img'/>
 					</div>
 					<div>
 						{/* <!-- check and text list --> */}
-						{arrayOfBenefits.map(e=>{
+						{arrayOfBenefits.map((e,i)=>{
                           return(
-							<div className='checkbox_list'>
+							<div className='checkbox_list' key={i}>
 								<img src={checkIcon} alt="check"/>
 								<p>{e}</p>
 						    </div>
@@ -125,22 +122,19 @@ const MainContent = () => {
 
 				{/* <!-- sect-2 --> */}
 				<div className='price_card'>
-					<p>Premium</p>
-					<p>$8/m</p>
-					<p>Priority support and multi-user access to maximize your productivity.</p>
-					<button>
-						{/* <!-- nude button --> */}
-						Get Started
-					</button>
+					<p className='parent_text'>Premium</p>
+					<p className='sub_text'>$8/m</p>
+					<p className='small_text'>Priority support and multi-user access to maximize your productivity.</p>
+					<Button children="Get Started" color="nudeborderblue"/>
 					<div>
 						<img src={creditCard} alt="credit card" className='price_card__main_img'/>
 						<img src={themeImg} alt="theme" className='price_card__sub_img'/>
 					</div>
 					<div>
 						{/* <!-- check and text list arrayOfBenefits--> */}
-						{arrayOfBenefits.map(e=>{
+						{arrayOfBenefits.map((e,i)=>{
                           return(
-							<div className='checkbox_list'>
+							<div className='checkbox_list' key={i}>
 								<img src={checkIcon} alt="check"/>
 								<p>{e}</p>
 						    </div>

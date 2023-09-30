@@ -36,10 +36,6 @@
   display: flex;
   gap: 30px;
 }
-.main_container__section_two__secondInner {
-  width: "fit-content";
-  margin: 0 auto;
-}
 .main_container__section_two__inner_two {
   width: 35%;
 }
@@ -124,7 +120,7 @@
 }
 
 .price_card {
-  width: 250px;
+  width: 300px;
   background-color: #fff;
   box-shadow: -1px 1px 5px -1px #afafb7;
   border-radius: 50px;
@@ -132,11 +128,26 @@
   text-align: center;
 }
 .price_card__main_img {
-  width: 300px;
+  width: 500px;
+  margin: 20px 10px;
 }
 .price_card__sub_img {
-  width: 60px;
-  margin-top: -50px;
+  width: 50px;
+  margin: -50px auto 30px;
+}
+.price_card .parent_text {
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.price_card .sub_text {
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+.price_card .small_text {
+  font-size: 0.8rem;
+  color: #6A6D9E;
+  padding-bottom: 30px;
 }
 
 .color_one_text {
@@ -150,10 +161,13 @@
 .checkbox_list {
   display: flex;
   gap: 5px;
+  padding-bottom: 10px;
+  align-items: start;
 }
 .checkbox_list img {
   width: 20px;
 }
 .checkbox_list p {
   font-size: 0.9rem;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */

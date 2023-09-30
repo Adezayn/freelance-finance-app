@@ -1,0 +1,52 @@
+@import '../abstracts/colors';
+
+.display{
+    display: flex;
+    gap: 10px;
+
+    & img{
+        width: 40px;
+    }
+
+}
+.reverse_display{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    & img{
+        width: 40px;
+    }
+    & .display_inner > p{
+    text-align: right;
+    }
+ 
+}
+.display, .reverse_display{
+    padding-bottom: 30px;
+}
+.representative, .customer{
+    width: 350px;
+    padding: 20px;
+}
+.representative{
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 30px;
+}
+.customer{
+    background-color: $color-secondary-light ;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 0;
+
+    & p{
+      color: #fff;
+    }
+}
+.display_inner > p{
+  font-size: 0.8rem;
+  padding-top: 5px;
+}

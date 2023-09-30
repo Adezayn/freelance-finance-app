@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/LandingPage/Header';
 import MainContent from '../components/LandingPage/MainContent';
 import Footer from '../components/LandingPage/Footer';
-import '../compiled/index.css'
+import '../compiled/landingPage.css';
 
 const LandingPage = () => {
   return (

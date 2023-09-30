@@ -3,4 +3,29 @@
 .footer{
   background-color: $color-primary-stroke;
   margin-top: 10rem;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: start;
+
+  &_content_one{
+    width: 40%;
+
+    & img{
+      padding-bottom: 20px;
+    }
+
+ }
+
+  &_content_two{
+    width: 40%;
+     display: flex;
+     justify-content: space-between;
+
+     &_inner_content{
+      & p{
+        padding-bottom: 20px;
+      }
+    }
+  }
 }
