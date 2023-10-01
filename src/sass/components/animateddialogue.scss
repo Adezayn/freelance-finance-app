@@ -4,8 +4,7 @@
     display: flex;
     gap: 10px;
     opacity: 0;
-    transform: translateY(50px);
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 
@@ -19,7 +18,7 @@
     flex-direction: row-reverse;
     gap: 10px;
     opacity: 0;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     & img{
@@ -111,9 +110,9 @@
  }
  .two{  
     animation-name: move2;
-    animation-delay: 2s;
+    animation-delay: 5s;
  }
  .three{  
     animation-name: move3;
-    animation-delay: 4s;
+    animation-delay: 10s;
  }
