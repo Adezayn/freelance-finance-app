@@ -1,0 +1,29 @@
+// $breakpoints: (
+//     extraSmall: 575px, 
+//     small: 767px, 
+//     medium: 991px,
+//     large: 1199px,
+//     desktop: 1024px
+// ) !default;
+$breakpoints: (
+    "xs": 0, 
+    "sm": 480px, 
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px
+) !default;
+
+// Media query mixin for "small" screens
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+      @content;
+    }
+  }
+  
+  // Media query mixin for "medium" screens
+  @mixin media-medium {
+    @media (max-width: #{$breakpoints[medium]}) {
+      @content;
+    }
+  }
+  
