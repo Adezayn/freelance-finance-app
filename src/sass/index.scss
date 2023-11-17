@@ -1,8 +1,7 @@
+// VARIABLES
+@import 'abstracts/variables';
 
-@forward 'abstracts';
 
-@forward 'globals';
+@import 'globals/boilerplate';
+@import 'globals/typography';
 
-@import 'pages';
-
-@import 'components';

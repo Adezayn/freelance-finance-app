@@ -1,4 +1,5 @@
-@import '../abstracts/colors';
+@import '../abstracts/variables';
+
 
 .main_container{
     width: 80%;
@@ -7,7 +8,11 @@
     &__section_one, &__section_two, &__section_three{
         display: flex;
        gap: 100px;
-        // align-items: flex-start;
+
+    //    @include xs{
+    //      display: flex;
+    //      flex-direction: column-reverse;
+    //    }
     }
 
     &__section_one{
@@ -53,10 +58,10 @@
             // background-color: #000;
             gap: 20px;
          }
-         &__secondInner{
-            // width: 'fit-content';
-            // margin: 0 auto;
-        }
+        //  &__secondInner{
+        //     // width: 'fit-content';
+        //     // margin: 0 auto;
+        // }
 
          &__inner_two{
             width: 35%;
@@ -200,7 +205,7 @@
     display: flex;
     gap: 5px;
     padding-bottom: 10px;
-    align-items: start;
+    align-items: flex-start;;
 
     & img{
         width: 20px;
