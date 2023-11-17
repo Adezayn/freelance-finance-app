@@ -1,4 +1,4 @@
-@import '../abstracts/colors';
+@import '../abstracts/variables';
 
 .footer{
   background-color: $color-primary-stroke;
@@ -6,7 +6,7 @@
   display: flex;
   padding: 50px 0;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 
   &_content_one{
     width: 40%;
