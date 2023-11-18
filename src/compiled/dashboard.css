@@ -1,0 +1,8 @@
+.dashboard_container {
+  display: flex;
+  background-color: #CAD6F1;
+}
+.dashboard_container .flex_one {
+  width: 20%;
+  height: 100vh;
+}/*# sourceMappingURL=dashboard.css.map */
