@@ -1,0 +1,11 @@
+@import '../abstracts/variables';
+
+.dashboard_container{
+    display: flex;
+    background-color: $color-primary-stroke;
+
+    .flex_one{
+        width: 20%;
+        height: 100vh;
+    }
+}
