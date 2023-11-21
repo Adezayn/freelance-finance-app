@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../../compiled/dashboard_navbar.css'
 import {Search, Notification, Profile} from '../index'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -8,7 +9,9 @@ const Navbar = () => {
         <Search />
         <div className='inner_container'>
             <Notification />
-            <Profile />
+            <NavLink to="/profile">
+               <Profile />
+            </NavLink>
         </div>
     </div>
   )

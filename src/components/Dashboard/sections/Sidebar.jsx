@@ -20,7 +20,7 @@ const Sidebar = () => {
             </div>
 
             <div>
-                <NavLink to="/dashboard" className={({ isActive }) =>
+                <NavLink to="/dashboard" exact className={({ isActive }) =>
                 isActive ? "active" : undefined
               }>
                     <div className='option'>
