@@ -2,10 +2,23 @@
 
 .dashboard_container{
     display: flex;
-    background-color: $color-primary-stroke;
+    background-color: #EFEFEF;
 
     .flex_one{
-        width: 20%;
+        width: 15%;
         height: 100vh;
+    }
+
+    .flex_two{
+        width: 95%;
+
+        & .navbar{
+          height: 50vh;
+        }
+
+        &_inner_container{
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 }

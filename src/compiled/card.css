@@ -1,0 +1,25 @@
+.card_container {
+  width: 100%;
+  padding: 20px;
+  border: 20px;
+}
+.card_container .title {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.card_container .mid_container {
+  display: flex;
+  gap: 10px;
+}
+.card_container .mid_container .text {
+  font-size: 1.2rem;
+}
+.card_container .mini_container {
+  padding: 5px;
+}
+.card_container .mini_container .text {
+  font-size: x-small;
+}
+.card_container .mini_text {
+  font-size: small;
+}/*# sourceMappingURL=card.css.map */
