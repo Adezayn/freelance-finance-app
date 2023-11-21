@@ -10,9 +10,5 @@
   width: 95%;
 }
 .dashboard_container .flex_two .navbar {
-  height: 50vh;
-}
-.dashboard_container .flex_two_inner_container {
-  width: 90%;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=dashboard.css.map */
