@@ -5,6 +5,7 @@ import Footer from '../components/LandingPage/Footer';
 import '../compiled/landingPage.css';
 
 const LandingPage = () => {
+
   return (
     <div className='landingPage_container'>
         <Header />

@@ -1,0 +1,32 @@
+.card_container{
+    width: 100%;
+    padding: 20px;
+    border: 20px;
+
+    .title{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .mid_container{
+        display: flex;
+        gap: 10px;
+
+        & .text{
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .mini_container{
+        padding: 5px;
+
+        & .text{
+            font-size: x-small;
+        }
+    }
+
+    .mini_text{
+        font-size: small;
+    }
+}
