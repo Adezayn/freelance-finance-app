@@ -1,8 +1,11 @@
 import React from 'react'
+import { IoIosNotifications } from "react-icons/io";
 
 const Notification = () => {
   return (
-    <div>Notification</div>
+    <div className='notification_container'>
+      <IoIosNotifications />
+    </div>
   )
 }
 

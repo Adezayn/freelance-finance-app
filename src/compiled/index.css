@@ -1,32 +1,45 @@
-*, *::before, *::after {
+html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
-* {
+*, *::after, *::before {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-  line-height: 1.3;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6A6D9E;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
 }
 
-input, button, textarea, select {
-  font: inherit;
+h1 {
+  font-size: 3.5rem;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+h2 {
+  font-size: 3rem;
 }
 
-#root, #__next {
-  isolation: isolate;
-}/*# sourceMappingURL=index.css.map */a, a:visited, a:active {
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
   text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

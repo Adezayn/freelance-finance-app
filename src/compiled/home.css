@@ -1,0 +1,9 @@
+.home_container {
+  display: flex;
+}
+.home_container .flex_one {
+  width: 70%;
+}
+.home_container .flex_two {
+  width: 30%;
+}/*# sourceMappingURL=home.css.map */
