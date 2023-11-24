@@ -1,0 +1,15 @@
+.main_section_container {
+  margin: 0 50px;
+}
+.main_section_container .container_one {
+  display: flex;
+  gap: 50px;
+}
+.main_section_container .container_two, .main_section_container .container_three {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_section_container .container_two > p, .main_section_container .container_three > p {
+  font-size: 2.5rem;
+}/*# sourceMappingURL=mainsection.css.map */
