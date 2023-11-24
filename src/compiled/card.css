@@ -2,25 +2,79 @@
   width: 100%;
   padding: 20px;
   border: 20px;
-  background-color: aqua;
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
 }
 .card_container .title {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .card_container .mid_container {
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  align-items: center;
 }
 .card_container .mid_container .text {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 .card_container .mini_container {
   padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .card_container .mini_container .text {
   font-size: x-small;
 }
 .card_container .mini_text {
   font-size: small;
+}
+
+.income {
+  background-color: #F44E77;
+}
+
+.outgoing {
+  background-color: #6F42CE;
+}
+
+.circle_one {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  border-radius: 0 100px 0 100px;
+  height: 100px;
+  border: 5px solid #FEC025;
+  background-color: transparent;
+  border-right: 0;
+  rotate: 0deg;
+  border-top: 0;
+}
+
+.circle_two {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  border-radius: 0 100px 0 100px;
+  height: 80px;
+  rotate: 180deg;
+  background-color: transparent;
+}
+.circle_two_income {
+  border: 5px solid #6F42CE;
+  border-left: 0;
+  border-bottom: 0;
+}
+.circle_two_outgoing {
+  border: 5px solid #36B6D4;
+  border-left: 0;
+  border-bottom: 0;
 }/*# sourceMappingURL=card.css.map */

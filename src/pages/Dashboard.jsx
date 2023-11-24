@@ -1,7 +1,6 @@
 import React from 'react'
-import {Outlet, Route, Routes } from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 import {Sidebar, Navbar} from '../components/Dashboard';
-import {Home, FinancialTools, TransactionMgt, Messaging} from './index';
 import '../compiled/dashboard.css';
 
 const Dashboard = () => {
@@ -22,4 +21,4 @@ const Dashboard = () => {
 )
 };
 
-export default Dashboard
+export default Dashboard;

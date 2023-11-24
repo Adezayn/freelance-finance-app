@@ -1,14 +1,15 @@
 .dashboard_container {
   display: flex;
   background-color: #EFEFEF;
+  position: relative;
 }
 .dashboard_container .flex_one {
   width: 15%;
   height: 100vh;
+  position: fixed;
 }
 .dashboard_container .flex_two {
-  width: 95%;
-}
-.dashboard_container .flex_two .navbar {
-  margin-bottom: 20px;
+  width: 85%;
+  margin-left: 15%;
+  position: relative;
 }/*# sourceMappingURL=dashboard.css.map */

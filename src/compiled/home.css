@@ -1,9 +1,12 @@
 .home_container {
+  padding-top: 30px;
   display: flex;
+  height: 100vh;
+  background-color: #EFEFEF;
 }
-.home_container .flex_one {
+.home_container_flex_one {
   width: 70%;
 }
-.home_container .flex_two {
+.home_container_flex_two {
   width: 30%;
 }/*# sourceMappingURL=home.css.map */

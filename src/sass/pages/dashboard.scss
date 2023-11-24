@@ -3,18 +3,22 @@
 .dashboard_container{
     display: flex;
     background-color: #EFEFEF;
+    position: relative;
 
     .flex_one{
         width: 15%;
         height: 100vh;
+        position: fixed;
     }
 
     .flex_two{
-        width: 95%;
+        width: 85%;
+        margin-left: 15%;
+        position: relative;
 
-        & .navbar{
-         margin-bottom: 20px;
-        }
+        // & .navbar{
+        //  margin-bottom: 20px;
+        // }
 
         &_inner_container{
             // margin: 0 auto;

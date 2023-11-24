@@ -1,12 +1,19 @@
+@import '../abstracts/variables';
+
 .home_container{
+    padding-top: 30px;
     display: flex;
+    height: 100vh;
+    // max-height: 100%;
+    background-color: #EFEFEF;
+    // flex-direction: column;
 
-
-    .flex_one {
+    &_flex_one {
         width: 70%;
     }
 
-    .flex_two {
+    &_flex_two {
         width: 30%;
+        // background-color: red;
     }
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 import MainSection from './MainSection';
 import Aside from './Aside';
+import '../../compiled/home.css';
 
 const Home = () => {
   return (
     <div className='home_container'>
-      <div className='flex_one'>
+      <div className='home_container_flex_one'>
          <MainSection />
       </div>
-      <div className='flex_two'>
+      <div className='home_container_flex_two'>
         <Aside />
       </div>
       
