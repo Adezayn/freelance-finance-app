@@ -1,10 +1,11 @@
 import React from 'react'
-import { IoIosNotifications } from "react-icons/io";
+import { VscBell, VscBellDot } from "react-icons/vsc";
 
 const Notification = () => {
   return (
     <div className='notification_container'>
-      <IoIosNotifications />
+      <VscBell color="blue"/>
+      <VscBellDot color="red"/>
     </div>
   )
 }
