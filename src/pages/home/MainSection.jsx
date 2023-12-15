@@ -39,8 +39,11 @@ const MainSection = () => {
        </div>
 
        <div className='container_three'>
-         <p>Last orders</p>
+         <p>Customer Demographic</p>
          <Link><p>See all</p></Link>
+       </div>
+       <div className='container_three_map'>
+
        </div>
     </div>
   )
