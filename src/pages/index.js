@@ -5,4 +5,6 @@ import ProfileMgt from "./ProfileMgt";
 import TransactionMgt from "./TransactionMgt";
 import Home from "./home/Home";
 import Messaging from "./Messaging";
-export {Dashboard, FinancialTools, LandingPage, ProfileMgt, TransactionMgt, Home, Messaging};
+import Login from "./auth/Login";
+import SignUp from "./auth/SignUp";
+export {Dashboard, FinancialTools, LandingPage, ProfileMgt, TransactionMgt, Home, Messaging, Login, SignUp};

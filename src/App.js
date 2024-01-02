@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import {Dashboard, LandingPage, ProfileMgt, Messaging, Home, FinancialTools, TransactionMgt} from './pages';
+import {Dashboard, LandingPage, ProfileMgt, Messaging, Home, FinancialTools, TransactionMgt, Login, SignUp} from './pages';
 
 import './compiled/index.css';
 
@@ -14,6 +14,8 @@ function App() {
          <Route  path='messaging' element={<Messaging />} />
       </Route>  
       <Route exact path='/profile' element={<ProfileMgt />} />
+      <Route path='login' element={<Login />} />
+      <Route path='signup' element={<SignUp />} />
     </Routes>
   );
 }
