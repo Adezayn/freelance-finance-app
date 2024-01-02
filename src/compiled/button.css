@@ -22,6 +22,12 @@
   background-color: transparent;
 }
 
+.nudeborderpink {
+  border: 1px solid #F44E77;
+  color: #F44E77;
+  background-color: transparent;
+}
+
 .button:hover {
   opacity: 0.8;
 }

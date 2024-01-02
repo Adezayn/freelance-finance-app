@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import arrowRight from '../../assets/arrow-right.svg';
 import logo from '../../assets/logo.svg';
 import headerPhone from '../../assets/header-phone.svg';
@@ -17,7 +18,12 @@ const Header = () => {
                     <li>Features</li>
                     <li>Pricing</li>
                 </ul>
-                <Button children="Sign up" color="pink"/>
+                <NavLink to="/signup">
+                  <Button children="Sign up" color="pink"/>
+                </NavLink>
+                <NavLink to="/login">
+                  <Button children="Login" color="nudeborderpink"/>
+                </NavLink>
             </nav>
 			{/* <!-- HEADER MAIN --> */}
 			<section className='header_container__section'>

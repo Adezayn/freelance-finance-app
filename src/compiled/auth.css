@@ -1,0 +1,14 @@
+.auth {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth form {
+  background-color: #F44E77;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 7rem;
+}/*# sourceMappingURL=auth.css.map */
