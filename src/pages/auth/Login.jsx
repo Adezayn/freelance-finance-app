@@ -2,18 +2,28 @@ import React, { useState } from 'react'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button';
 import '../../compiled/auth.css';
+import Navbar from '../../components/LandingPage/Navbar';
 
  const Login = () => {
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState('');
   return (
     <div className='auth'>
-        <form>
-            <TextInput placeholder='First Name' valueInput={username} valueFunction={(e)=>setUserName(e.target.value)}/>
-            <TextInput placeholder='Password' valueInput={password} valueFunction={(e)=>setPassword(e.target.value)}/>
+        <div className='auth_nav'>
+          <Navbar />
+        </div>
+        <div className='auth_body'>
+            <h1>Secure Login</h1>
+            <form>
+                <p>Email</p>
+                <TextInput valueInput={username} valueFunction={(e)=>setUserName(e.target.value)}/>
+                <p>Password</p>
+                <TextInput  valueInput={password} valueFunction={(e)=>setPassword(e.target.value)}/>
 
-            <Button children="Submit" color="blue"/>
-        </form>
+                <Button children="Login" color="blue" size="L"/>
+            </form>
+            <p className='forgot_text'>Forgot Password?</p>
+        </div>
     </div>
   )
 };
