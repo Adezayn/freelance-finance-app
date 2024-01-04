@@ -2,13 +2,15 @@ import React from 'react';
 import plusIcon from '../../assets/plus-icon.svg';
 import '../../compiled/accordion.css';
 
-const AccordionItem = ({object}) => {
+const AccordionItem = ({object, curOpen, onOpen}) => {
+  const isOpen = curOpen === object.id;
   return (
-    <div className='accordion_item'>
+    <div className={`accordion_item ${isOpen ? "open_accordion" : ""}`} onClick={()=>onOpen(isOpen ? null : object.id)}>
          <div className='accord'>
             <p>{object.question}</p>
-            <img src={plusIcon} alt="plus icon" style={{width: '20px'}}/>
+            <p className='switch-icon'>{isOpen ? '-' : '+'}</p>
         </div>
+      {isOpen &&   <div>{object.answer}</div> }
     </div>
   )
 }
