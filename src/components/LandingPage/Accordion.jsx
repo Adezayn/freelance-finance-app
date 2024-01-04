@@ -26,7 +26,7 @@ const Accordion = () => {
           },
           {
             question: "What happens if I withdraw more than $250?",
-            answer: "You will be charged 0.5% for any transactions above 250$",
+            answer: "You will be charged 0.5% for any transactions above $250",
             id: 5
           }
     ]
