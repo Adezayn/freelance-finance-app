@@ -17,11 +17,11 @@ const Navbar = () => {
         <li>Pricing</li>
     </ul>
     <NavLink to="/signup">
-      <Button children="Sign up" color="pink"/>
+      <Button color="pink">Sign up</Button>
     </NavLink>
     <p>{url}</p>
     <NavLink to="/login">
-      <Button children="Login" color={url === "http://localhost:3000/" ? "nudeborderwhite" : "nudeborderpink"}/>
+      <Button color={url === "http://localhost:3000/" ? "nudeborderwhite" : "nudeborderpink"}>Login</Button>
     </NavLink>
 </nav>
   )
