@@ -18,6 +18,7 @@
         margin-bottom: 20px;
     }
 }
+
 .option{
     color: #fff;
     font-size: 1.8rem;
@@ -36,12 +37,11 @@
     //     bottom: 100;
     // }
 
-    &:hover, .active{
+    &:hover, a.active &{
         cursor: pointer;
         border-radius: 20px;
         background-color: rgba(245, 245, 245, 0.3); /* Use the color with an alpha channel for transparency */
         backdrop-filter: blur(10px); /* Apply a blur effect */
-        border-radius: 20px; /* Optional: Apply border-radius for a rounded appearance */
     }
 }
 

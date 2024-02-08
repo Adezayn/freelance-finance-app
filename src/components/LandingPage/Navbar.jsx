@@ -4,10 +4,10 @@ import Button from '../Button';
 import logo from '../../assets/logo.svg';
 import '../../compiled/header.css';
 
-const Navbar = () => {
+const Navbar = ({optionalStyle}) => {
   const url = window.location.href;
   return (
-    <nav className='header_container__nav'>
+    <nav className={`header_container__nav ${optionalStyle && 'optional_nav'}`}>
     <NavLink to="/">
       <img src={logo} alt="logo"/>
     </NavLink>

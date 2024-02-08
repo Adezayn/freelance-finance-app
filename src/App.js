@@ -6,7 +6,7 @@ import './compiled/index.css';
 function App() {
   return (
     <Routes>
-      <Route exact path='/' element={<LandingPage />} />
+      <Route index element={<LandingPage />} />
       <Route exact path='/dashboard' element={<Dashboard />} >
          <Route  index element={<Home />} />
          <Route  path='finance-tools' element={<FinancialTools />} />

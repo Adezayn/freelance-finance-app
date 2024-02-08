@@ -19,30 +19,26 @@ const Sidebar = () => {
                <img src={logo} alt="logo"/>
             </div>
 
-            <div>
-                <NavLink to="/dashboard" exact className={({ isActive }) =>
-                isActive ? "active" : undefined
-              }>
+            <div className='tabs'>
+                <NavLink to="" exact>
                     <div className='option'>
                         <RiHome5Line />
                         <p>Home</p>
                     </div>
                 </NavLink>
-                <NavLink to="/dashboard/transactions">
+                <NavLink to="transactions">
                     <div className='option'>
                     <LiaMoneyCheckAltSolid />
                         <p>Transactions</p>
                     </div>
                 </NavLink>
-               <NavLink to="/dashboard/finance-tools">
+               <NavLink to="finance-tools">
                     <div className='option'>
                         <GiReceiveMoney />
                         <p>Financial Tools</p>
                     </div>
                </NavLink>
-               <NavLink to="/dashboard/messaging" className={({ isActive }) =>
-                isActive ? "active" : undefined
-              }>
+               <NavLink to="messaging">
                    <div className='option'>
                         <HiOutlineChatBubbleLeftRight />
                         <p>Messages</p>
