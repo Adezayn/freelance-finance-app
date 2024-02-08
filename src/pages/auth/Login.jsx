@@ -7,14 +7,18 @@ import Navbar from '../../components/LandingPage/Navbar';
  const Login = () => {
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState('');
+
+    const handleSubmit = () => {
+      // if(!username || !password) return;
+    }
   return (
     <div className='auth'>
-        <div className='auth_nav'>
+        {/* <div className='auth_nav'> */}
           <Navbar />
-        </div>
+        {/* </div> */}
         <div className='auth_body'>
             <h1>Secure Login</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <p>Email</p>
                 <TextInput valueInput={username} valueFunction={(e)=>setUserName(e.target.value)}/>
                 <p>Password</p>

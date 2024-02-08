@@ -14,7 +14,7 @@ const SignUp = () => {
   return (
     <div className='auth'>
         <div className='auth_nav'>
-          <Navbar />
+          <Navbar optionalStyle />
         </div>
 
         <div className='auth_body'>
@@ -34,7 +34,7 @@ const SignUp = () => {
                 <p>Secret Answer</p>
                 <TextInput valueInput={secretAns} valueFunction={(e)=>setSecretAnswer(e.target.value)}/>
 
-                <Button children="Submit" color="blue" size="L"/>
+                <Button color="blue" size="L">Submit</Button>
             </form>
         </div>
     </div>

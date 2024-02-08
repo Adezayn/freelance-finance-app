@@ -30,13 +30,12 @@
 .option p {
   font-size: 1.2rem;
 }
-.option:hover, .option .active {
+.option:hover, a.active .option {
   cursor: pointer;
   border-radius: 20px;
   background-color: rgba(245, 245, 245, 0.3); /* Use the color with an alpha channel for transparency */
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px); /* Apply a blur effect */
-  border-radius: 20px; /* Optional: Apply border-radius for a rounded appearance */
 }
 
 .glassmorphic-container {
