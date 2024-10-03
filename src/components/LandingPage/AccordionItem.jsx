@@ -1,5 +1,4 @@
 import React from 'react';
-import plusIcon from '../../assets/plus-icon.svg';
 import '../../compiled/accordion.css';
 
 const AccordionItem = ({object, curOpen, onOpen}) => {
