@@ -1,5 +1,5 @@
-// VARIABLES
-@import 'abstracts/variables';
-@import 'globals/boilerplate';
-// @import 'globals/typography';
+@import 'globals/variables';
+@import 'globals/reset';    //reset the default style
+@import 'globals/base';
+@import 'globals/media-query';
 

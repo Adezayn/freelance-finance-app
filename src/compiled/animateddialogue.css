@@ -12,7 +12,6 @@
 
 .reverse_display {
   display: flex;
-  flex-direction: row-reverse;
   gap: 10px;
   opacity: 0;
   animation-duration: 5s;
@@ -25,14 +24,25 @@
 .reverse_display .display_inner > p {
   text-align: right;
 }
+@media (min-width: 720px) {
+  .reverse_display {
+    flex-direction: row-reverse;
+  }
+}
 
 .display, .reverse_display {
   padding-bottom: 30px;
 }
 
 .representative, .customer {
-  width: 350px;
-  padding: 20px;
+  width: 250px;
+  padding: 10px;
+}
+@media (min-width: 720px) {
+  .representative, .customer {
+    width: 350px;
+    padding: 20px;
+  }
 }
 
 .representative {

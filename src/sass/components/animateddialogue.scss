@@ -1,4 +1,5 @@
-@import '../abstracts/variables';
+@import '../globals/variables';
+@import '../globals/media-query';
 
 .display{
     display: flex;
@@ -15,7 +16,6 @@
 }
 .reverse_display{
     display: flex;
-    flex-direction: row-reverse;
     gap: 10px;
     opacity: 0;
     animation-duration: 5s;
@@ -27,14 +27,21 @@
     & .display_inner > p{
     text-align: right;
     }
- 
+    @include md {
+      flex-direction: row-reverse;
+    }
 }
 .display, .reverse_display{
     padding-bottom: 30px;
 }
 .representative, .customer{
-    width: 350px;
+    width: 250px;
+    padding: 10px;
+
+    @include md {
+      width: 350px;
     padding: 20px;
+    }
 }
 .representative{
     background-color: #fff;

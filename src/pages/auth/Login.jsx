@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button';
 import '../../compiled/auth.css';
-import Navbar from '../../components/LandingPage/Navbar';
+import Navbar from '../../pages/landingPage/Navbar';
 
  const Login = () => {
     const [username, setUserName] = useState('');

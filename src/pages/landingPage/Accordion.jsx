@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AccordionItem from './AccordionItem';
+import AccordionItem from '../../components/AccordionItem';
 
 const Accordion = () => {
   const [curOpen, setCurOpen] = useState(null);

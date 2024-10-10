@@ -1,7 +1,7 @@
 import React from 'react'
 import MainSection from './MainSection';
 import Aside from './Aside';
-import '../../compiled/home.css';
+import '../../../compiled/home.css';
 
 const Home = () => {
   return (

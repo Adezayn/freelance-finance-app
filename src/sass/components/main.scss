@@ -1,5 +1,5 @@
-@import '../abstracts/variables';
-
+@import '../globals/variables';
+@import '../globals/media-query';
 
 .main_container{
     width: 80%;
@@ -7,12 +7,16 @@
 
     &__section_one, &__section_two, &__section_three{
         display: flex;
-       gap: 100px;
+        flex-direction: column;
 
     //    @include xs{
     //      display: flex;
     //      flex-direction: column-reverse;
     //    }
+    @include md {
+            flex-direction: row;
+             gap: 100px;
+          }
     }
 
     &__section_one{
@@ -127,8 +131,12 @@
         &__two{
             padding-top: 3rem;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           gap: 40px;
+
+          @include md {
+            flex-direction: row;
+          }
         }
         &_inner_one{
             & h2{

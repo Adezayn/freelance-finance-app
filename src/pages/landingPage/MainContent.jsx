@@ -7,9 +7,9 @@ import themeImg from '../../assets//Themes.svg';
 import checkIcon from '../../assets/check-icon.svg';
 import grayCheckIcon from '../../assets/gray-check-icon.svg';
 import '../../compiled/main.css';
-import CurvedPatch from '../CurvedPatch';
-import AnimatedDialogue from './AnimatedDialogue';
-import Button from '../Button';
+import CurvedPatch from '../../components/CurvedPatch';
+import AnimatedDialogue from '../../components/AnimatedDialogue';
+import Button from '../../components/Button';
 import Accordion from './Accordion';
 
 const MainContent = () => {
@@ -25,7 +25,7 @@ const MainContent = () => {
 	]
   return (
     // <!-- MAIN CONTENT -->
-	<main className='main_container'>
+	<main className='main_container'id="features">
 		
 		<section className='main_container__section_one'>
 			<div className='main_container__section_one__one'>
@@ -86,7 +86,7 @@ const MainContent = () => {
 		</section>
 
 		{/* <!-- Flex container --- 4 --> */}
-         <section className='main_container__section_four'>
+         <section className='main_container__section_four' id="pricing">
 			<div>
 				<div className='main_container__section_four__one'> 
 					<h3>
@@ -165,4 +165,4 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
+export default MainContent;

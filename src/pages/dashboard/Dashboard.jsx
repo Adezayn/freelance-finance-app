@@ -1,7 +1,7 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom';
-import {Sidebar, Navbar} from '../components/Dashboard';
-import '../compiled/dashboard.css';
+import {Sidebar, Navbar} from '../../components/Dashboard';
+import '../../compiled/dashboard.css';
 
 const Dashboard = () => {
   return (

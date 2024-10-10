@@ -1,20 +1,18 @@
 .header {
   background-image: url("../assets/header_bg.png");
-  margin: 0;
-  background-position: 100% 100% 100% 100%;
-  padding: 0 3rem;
-  background-origin: padding-box;
-  background-size: cover;
+  background-position: bottom center right;
 }
 .header_container {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 .header_container__nav__ul {
   display: flex;
   width: 30%;
   list-style-type: none;
-  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
 }
 .header_container__nav__ul li {
   color: white;
@@ -22,25 +20,53 @@
   font-size: 1rem;
 }
 .header_container__section {
-  display: flex;
-  align-items: flex-start;
-}
-.header_container__section__one h1 {
+  display: block;
   color: white;
-  font-size: 3.5rem;
+}
+.header_container__section__one {
+  flex-basis: 40%;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
 }
 .header_container__section__one p {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 200;
-  margin: 15px 0;
+  margin: 0.9rem 0;
+}
+.header_container__section__two {
+  display: none;
+}
+@media (min-width: 720px) {
+  .header {
+    padding: 0 3rem;
+    background-origin: padding-box;
+    background-size: cover;
+  }
+  .header_container {
+    margin-top: 3.75rem;
+  }
+  .header_container__section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .header_container__section__one {
+    flex-basis: 40%;
+    margin-top: 11rem;
+  }
+  .header_container__section__one p {
+    margin: 0.9rem 0;
+  }
+  .header_container__section__two {
+    display: block;
+    flex-basis: 60%;
+  }
 }
 
 .header_container__nav {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding-top: 3rem;
 }
 .header_container__nav.optional_nav {
   padding: 2rem 5rem;
@@ -52,4 +78,37 @@
   top: 0;
   left: 0;
   right: 0;
+}
+
+.flex {
+  display: none;
+}
+@media (min-width: 720px) {
+  .flex {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.no-display {
+  display: none;
+}
+
+.nav-toggle {
+  font-size: 3.5rem;
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+  transition: display 0.3ms;
+  cursor: pointer;
+}
+@media (min-width: 720px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-menu {
+  transition: display 0.3ms;
 }/*# sourceMappingURL=header.css.map */

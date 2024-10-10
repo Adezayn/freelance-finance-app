@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../../components/Dashboard/Card';
-import '../../compiled/mainsection.css';
+import Card from '../../../components/Dashboard/Card';
+import '../../../compiled/mainsection.css';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../compiled/accordion.css';
+import '../compiled/accordion.css';
 
 const AccordionItem = ({object, curOpen, onOpen}) => {
   const isOpen = curOpen === object.id;

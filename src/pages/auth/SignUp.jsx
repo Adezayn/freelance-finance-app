@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TextInput from '../../components/TextInput';
-import Navbar from '../../components/LandingPage/Navbar';
+import Navbar from "../../pages/landingPage/Navbar";
 import Button from '../../components/Button';
 import '../../compiled/auth.css';
 

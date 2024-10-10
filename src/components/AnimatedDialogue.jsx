@@ -1,7 +1,7 @@
 import React from 'react';
-import maleImg from '../../assets/man-img.svg';
-import femaleImg from '../../assets/female-img.svg';
-import '../../compiled/animateddialogue.css';
+import maleImg from '../assets/man-img.svg';
+import femaleImg from '../assets/female-img.svg';
+import '../compiled/animateddialogue.css';
 
 const AnimatedDialogue = () => {
   return (
