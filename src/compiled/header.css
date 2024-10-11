@@ -96,17 +96,22 @@
 }
 
 .nav-toggle {
-  font-size: 3.5rem;
-  color: #fff;
-  background: transparent;
+  font-size: 2.5rem;
+  color: #554DDE;
+  background: #fff;
+  border-radius: 0.25rem;
   border-color: transparent;
-  transition: display 0.3ms;
+  transition: transform 0.3ms;
   cursor: pointer;
 }
 @media (min-width: 720px) {
   .nav-toggle {
     display: none;
   }
+}
+
+.nav-toggle:hover {
+  transform: scale(1.05);
 }
 
 .nav-menu {

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { CgMenuRound } from "react-icons/cg";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import Button from "../../components/Button";
 import logo from "../../assets/logo.svg";
@@ -47,7 +47,7 @@ const Navbar = ({ optionalStyle }) => {
       </NavLink> */}
       </div>
       <button className="nav-toggle" onClick={toggleLinks}>
-        <CgMenuRound />
+        <FaBars />
       </button>
 
       {showLinks && (

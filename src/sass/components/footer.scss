@@ -1,31 +1,59 @@
 @import '../globals/variables';
+@import '../globals/media-query';
 
 .footer{
   background-color: $color-primary-stroke;
   margin-top: 10rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 50px 0;
-  justify-content: center;
-  align-items: flex-start;
 
   &_content_one{
-    width: 40%;
-
+    text-align: center;
+    margin-bottom: 30px;
     & img{
       padding-bottom: 20px;
+      margin: auto;
     }
 
  }
 
   &_content_two{
-    width: 40%;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
+     gap: 30px;
 
      &_inner_content{
       & p{
         padding-bottom: 20px;
       }
+    }
+  }
+
+  @include md {
+        flex-direction: row;
+       align-items: flex-start;
+
+       &_content_one{
+           width: 40%;
+           text-align: start;
+           margin-bottom: 0;
+            & img{
+              margin: 0;
+            }
+       }
+
+      &_content_two{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        &_inner_content{
+          & p{
+            padding-bottom: 20px;
+          }
+        }
     }
   }
 }

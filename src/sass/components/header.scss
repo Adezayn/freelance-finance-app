@@ -110,15 +110,27 @@
 }
 
 .nav-toggle {
-  font-size: 3.5rem;
-  color: $color-primary-white;
-  background: transparent;
+  font-size: 2.5rem;
+  color: $color-primary;
+  background: $color-primary-white;
+  border-radius: 0.25rem;
   border-color: transparent;
-  transition: display 0.3ms;
+  transition: transform 0.3ms;
+//     width: 2rem;
+//   height: 2rem;
+//   background: $color-dashboard-light-3;
+//   color: $color-blue-violet-800;
+//   border-radius: 0.25rem;
+//   border-color: transparent;
+//   transition: 0.3s ease-in-out all;
   cursor: pointer;
      @include md{
        display: none;
     }
+}
+
+.nav-toggle:hover {
+  transform: scale(1.05);
 }
 
 .nav-menu{
