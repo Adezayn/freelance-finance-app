@@ -9,7 +9,7 @@ const AccordionItem = ({object, curOpen, onOpen}) => {
             <p>{object.question}</p>
             <p className='switch-icon'>{isOpen ? '-' : '+'}</p>
         </div>
-      {isOpen &&   <div>{object.answer}</div> }
+      {isOpen &&   <h4>{object.answer}</h4> }
     </div>
   )
 }

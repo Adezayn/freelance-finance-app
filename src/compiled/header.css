@@ -1,9 +1,9 @@
 .header {
   background-image: url("../assets/header_bg.png");
   background-position: bottom center right;
+  padding: 0 2rem;
 }
 .header_container {
-  width: 80%;
   margin: auto;
   margin-top: 1rem;
 }
@@ -61,7 +61,6 @@
 }
 
 .header_container__nav {
-  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -96,8 +95,9 @@
 }
 
 .nav-toggle {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #554DDE;
+  padding: 0.5rem;
   background: #fff;
   border-radius: 0.25rem;
   border-color: transparent;

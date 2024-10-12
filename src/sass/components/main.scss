@@ -2,22 +2,23 @@
 @import '../globals/media-query';
 
 .main_container{
-    width: 80%;
     margin: auto;
+    padding: 0 2rem;
 
     &__section_one, &__section_two, &__section_three{
         display: flex;
         flex-direction: column;
-
-    @include md {
+        padding-top: 4rem;
+  @include md {
+             padding: 0 3rem;
+          }
+    @include lg {
             flex-direction: row;
              gap: 100px;
           }
     }
 
     &__section_one{
-       padding-top: 4rem;
-
        &__one{
         & h2{
             // color: $color-primary;
@@ -32,12 +33,12 @@
             font-weight: 300;
             margin: 10px 0;
         }
-        @include md {
+        @include lg {
             width: 35%;
         }
        }
        &__two{
-        @include md {
+        @include lg {
             width: 45%;
         }
        }
@@ -48,7 +49,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            @include md {
+            @include lg {
               width: 45%;
            }
          }
@@ -60,11 +61,6 @@
             // background-color: #000;
             gap: 20px;
          }
-        //  &__secondInner{
-        //     // width: 'fit-content';
-        //     // margin: 0 auto;
-        // }
-
          &__inner_two{
             & h2{
                 color: $color-primary;
@@ -76,7 +72,7 @@
                 font-weight: 300;
                 margin: 10px 0;
             }
-            @include md {
+            @include lg {
             width: 35%;
            }
          }
@@ -84,7 +80,6 @@
 
     &__section_three{
         &_inner_one{
-            margin-top: 5rem;
             & h2{
                 // color: $color-primary;
                 color: #554DDE;
@@ -102,14 +97,14 @@
                 gap: 0.5rem;
                 padding-top: 1rem;
             }
-            @include md {
+            @include lg {
               width: 35%;
               margin-top: 0;
             }
         }
         &_inner_two{
              margin-top: 3rem;
-              @include md {
+              @include lg {
               width: 45%;
               margin-top: 0;
             }
@@ -117,7 +112,7 @@
     }
 
     &__section_four{
-        padding-top: 8rem;
+        padding-top: 4rem;
         // text-align: center;
         display: flex;
         justify-content: center; /* Center horizontally */
@@ -141,6 +136,7 @@
           display: flex;
           flex-direction: column;
           gap: 40px;
+         align-items: center;
 
           @include md {
             flex-direction: row;
@@ -160,11 +156,8 @@
         }
     }
     &__section_five{
-        padding-top: 8rem;
+        padding-top: 4rem;
         text-align: center;
-        &__one{
-            margin-bottom: 5rem;
-        }
         & h3{
             font-size: 2rem;
         }
@@ -175,6 +168,14 @@
             font-size: 1rem;
             font-weight: 300;
             margin: 10px 0;
+            text-align: start;
+        }
+
+            &__one{
+            margin-bottom: 5rem;
+                & p {
+                        text-align: center;
+                    }
         }
     }
 }
@@ -182,7 +183,7 @@
 .price_card{
     width: 300px;
     background-color: #fff;
-    box-shadow: -1px 1px 5px -1px #afafb7;
+    box-shadow: $shadow-1;
     border-radius: 50px;
     padding: 20px 40px;
     text-align: center;

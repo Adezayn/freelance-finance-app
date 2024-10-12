@@ -4,7 +4,7 @@
 .accordion_item{
     background-color: #fff;
     padding: 5px 20px;
-    box-shadow: -1px 1px 0px -1px #afafb7;
+    box-shadow: $shadow-1;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,9 @@
     justify-content: space-between;
     align-items: center;
 
-    .switch-icon{
-        font-size: 2rem;
-    }
+    // .switch-icon{
+    //     font-size: 2rem;
+    // }
 }
 
 .open_accordion{
@@ -33,7 +33,7 @@
         margin-bottom: 10px;
     }
 
-    & .accord > p:first-child{
+    & .accord ~ p:first-child{
         color: $color-blue-violet-800;
         font-size: 1.2rem;
     }

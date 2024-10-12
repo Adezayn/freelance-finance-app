@@ -4,10 +4,10 @@
 .header{
    background-image: url("../assets/header_bg.png");
    background-position: bottom center right;
+   padding: 0 2rem;
 
     &_container{
-        width: 80%;
-        margin: auto;
+         margin: auto;
         margin-top: 1rem;
     
         &__nav__ul{
@@ -75,7 +75,6 @@
 
 
 .header_container__nav{
-    width: 80%;
      margin: auto;
     display: flex;
     justify-content: space-between;
@@ -110,19 +109,13 @@
 }
 
 .nav-toggle {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: $color-primary;
+  padding: 0.5rem;
   background: $color-primary-white;
   border-radius: 0.25rem;
   border-color: transparent;
   transition: transform 0.3ms;
-//     width: 2rem;
-//   height: 2rem;
-//   background: $color-dashboard-light-3;
-//   color: $color-blue-violet-800;
-//   border-radius: 0.25rem;
-//   border-color: transparent;
-//   transition: 0.3s ease-in-out all;
   cursor: pointer;
      @include md{
        display: none;

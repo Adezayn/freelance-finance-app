@@ -2,11 +2,10 @@
 
 .curvedpatch{
     background-color: #fff;
-    border: 0.1px solid #c7c5ed;
     border-radius: 50px;
     padding: 20px 0;
     width: 200px;
-    box-shadow: -1px 1px 5px -1px #afafb7;
+    box-shadow: $shadow-1;
 
     & .small_text{
          color: black;

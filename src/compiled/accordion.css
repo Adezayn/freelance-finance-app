@@ -1,7 +1,7 @@
 .accordion_item {
   background-color: #fff;
   padding: 5px 20px;
-  box-shadow: -1px 1px 0px -1px #afafb7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -20,9 +20,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.accord .switch-icon {
-  font-size: 2rem;
-}
 
 .open_accordion {
   border-top: 2px solid #3b359e;
@@ -30,7 +27,7 @@
 .open_accordion .accord {
   margin-bottom: 10px;
 }
-.open_accordion .accord > p:first-child {
+.open_accordion .accord ~ p:first-child {
   color: #3b359e;
   font-size: 1.2rem;
 }/*# sourceMappingURL=accordion.css.map */
