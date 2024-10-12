@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import Button from "../../components/Button";
 import logo from "../../assets/logo.svg";
@@ -13,13 +14,17 @@ const Navbar = ({ optionalStyle }) => {
      setShowLinks(!showLinks);
    };
 
+   const closeLinks = () => {
+     setShowLinks(false);
+   };
+
   return (
     <nav className={`header_container__nav ${optionalStyle && "optional_nav"}`}>
-      <NavLink to="/">
-        <img src={logo} alt="logo" />
-      </NavLink>
-      <div className="flex">
-        <ul className="header_container__nav__ul">
+      <div className="header_container__nav__container">
+        <NavLink to="/">
+          <img src={logo} alt="logo" />
+        </NavLink>
+        <ul className="header_container__nav__ul no-display">
           <li>Home</li>
           <li>
             <a href="#features">Features</a>
@@ -29,7 +34,7 @@ const Navbar = ({ optionalStyle }) => {
           </li>
         </ul>
         {/* <NavLink to="/signup"> */}
-        <NavLink to="/">
+        <NavLink to="/" className="no-display">
           <Button color="pink">Sign up</Button>
         </NavLink>
         {/* <p>{url}</p> */}
@@ -45,26 +50,30 @@ const Navbar = ({ optionalStyle }) => {
           Login
         </Button>
       </NavLink> */}
+        <button className="nav-toggle" onClick={toggleLinks}>
+          <FaBars />
+        </button>
       </div>
-      <button className="nav-toggle" onClick={toggleLinks}>
-        <FaBars />
-      </button>
 
       {showLinks && (
-        <div className="nav-menu">
-          <ul className="">
-            <li>Home</li>
-            <li>
-              <a href="#features">Features</a>
-            </li>
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
-          </ul>
-          {/* <NavLink to="/signup"> */}
-          <NavLink to="/">
-            <Button color="pink">Sign up</Button>
-          </NavLink>
+        <div className="nav-menu" onClick={closeLinks}>
+          <button className="close-icon">
+            <IoClose />
+          </button>
+          <div>
+            <ul className="">
+              <li>Home</li>
+              <li>
+                <a href="#features">Features</a>
+              </li>
+              <li>
+                <a href="#pricing">Pricing</a>
+              </li>
+            </ul>
+            <NavLink to="/" className="nav-menu-btn">
+              <Button color="pink">Sign up</Button>
+            </NavLink>
+          </div>
         </div>
       )}
     </nav>

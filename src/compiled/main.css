@@ -7,11 +7,6 @@
   flex-direction: column;
   padding-top: 4rem;
 }
-@media (min-width: 720px) {
-  .main_container__section_one, .main_container__section_two, .main_container__section_three {
-    padding: 0 3rem;
-  }
-}
 @media (min-width: 960px) {
   .main_container__section_one, .main_container__section_two, .main_container__section_three {
     flex-direction: row;
