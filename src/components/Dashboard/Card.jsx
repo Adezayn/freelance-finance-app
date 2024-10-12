@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
+import { FaArrowTrendUp } from "react-icons/fa6";
 import '../../compiled/card.css';
 
 const Card = (props) => {

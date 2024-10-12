@@ -8,7 +8,7 @@ import "../../compiled/header.css";
 
 const Navbar = ({ optionalStyle }) => {
   const [showLinks, setShowLinks] = useState(false);
-  const url = window.location.href;
+  // const url = window.location.href;
 
    const toggleLinks = () => {
      setShowLinks(!showLinks);
