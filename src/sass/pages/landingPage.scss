@@ -1,5 +1,12 @@
 @import '../globals/variables';
+@import '../globals/media-query';
 
 .landingPage_container{
     background-color: $color-primary-neutral;
+
+       @include lg {
+              background-image: url("../assets/stripped-bg.svg");
+              background-position: bottom;
+              background-repeat: no-repeat;
+        }
 }

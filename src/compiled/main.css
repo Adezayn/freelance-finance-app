@@ -64,6 +64,9 @@
     width: 35%;
   }
 }
+.main_container__section_three {
+  justify-content: center;
+}
 .main_container__section_three_inner_one h2 {
   color: #554DDE;
   font-size: 2.5rem;
@@ -92,6 +95,13 @@
   .main_container__section_three_inner_two {
     width: 45%;
     margin-top: 0;
+  }
+}
+@media (min-width: 960px) {
+  .main_container__section_three {
+    background-image: url("../assets/top-block-bg.svg"), url("../assets/top-block-bg.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
   }
 }
 .main_container__section_four {
@@ -151,6 +161,11 @@
 }
 .main_container__section_five__one p {
   text-align: center;
+}
+@media (min-width: 960px) {
+  .main_container__section_five {
+    padding-top: 16rem;
+  }
 }
 
 .price_card {

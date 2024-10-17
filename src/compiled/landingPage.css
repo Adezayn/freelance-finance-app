@@ -1,3 +1,10 @@
 .landingPage_container {
   background-color: #F2F6FF;
+}
+@media (min-width: 960px) {
+  .landingPage_container {
+    background-image: url("../assets/stripped-bg.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=landingPage.css.map */

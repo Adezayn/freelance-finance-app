@@ -76,6 +76,7 @@
     }
 
     &__section_three{
+        justify-content: center;
         &_inner_one{
             & h2{
                 // color: $color-primary;
@@ -105,6 +106,11 @@
               width: 45%;
               margin-top: 0;
             }
+        }
+        @include lg {
+            background-image: url("../assets/top-block-bg.svg"),  url("../assets/top-block-bg.svg");
+            background-position: top left, bottom right;
+            background-repeat: no-repeat;
         }
     }
 
@@ -174,6 +180,10 @@
                         text-align: center;
                     }
         }
+
+            @include lg {
+             padding-top: 16rem;
+          }
     }
 }
 

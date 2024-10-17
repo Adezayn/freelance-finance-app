@@ -1,1 +1,1 @@
-{"version":3,"sources":["../sass/pages/landingPage.scss","../sass/globals/_variables.scss","landingPage.css"],"names":[],"mappings":"AAEA;EACI,yBCCoB;ACFxB","file":"landingPage.css"}
+{"version":3,"sources":["../sass/pages/landingPage.scss","landingPage.css","../sass/globals/_media-query.scss"],"names":[],"mappings":"AAGA;EACI,yBAAA;ACFJ;ACkCI;EFjCJ;IAIc,kDAAA;IACA,2BAAA;IACA,4BAAA;ECDZ;AACF","file":"landingPage.css"}
