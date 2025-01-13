@@ -12,53 +12,51 @@ import '../../../compiled/sidebar.css';
 
 const Sidebar = () => {
   return (
-    <div className='sidebar_container'>
-    
-        <div className='sub_container'> 
-            <div className='navbar'>
-               <img src={logo} alt="logo"/>
-            </div>
+    <div className="sidebar_container">
+      <div className="sub_container">
+        <NavLink to="/" className="navbar">
+          <img src={logo} alt="logo" />
+        </NavLink>
 
-            <div className='tabs'>
-                <NavLink to="" exact>
-                    <div className='option'>
-                        <RiHome5Line />
-                        <p>Home</p>
-                    </div>
-                </NavLink>
-                <NavLink to="transactions">
-                    <div className='option'>
-                    <LiaMoneyCheckAltSolid />
-                        <p>Transactions</p>
-                    </div>
-                </NavLink>
-               <NavLink to="finance-tools">
-                    <div className='option'>
-                        <GiReceiveMoney />
-                        <p>Financial Tools</p>
-                    </div>
-               </NavLink>
-               <NavLink to="messaging">
-                   <div className='option'>
-                        <HiOutlineChatBubbleLeftRight />
-                        <p>Messages</p>
-                    </div>
-               </NavLink>
+        <div className="tabs">
+          <NavLink to="" exact>
+            <div className="option">
+              <RiHome5Line />
+              <p>Home</p>
             </div>
-
-            <div className='option last'>
-            <MdOutlineLiveHelp />
-                <p>Help</p>
+          </NavLink>
+          <NavLink to="transactions">
+            <div className="option">
+              <LiaMoneyCheckAltSolid />
+              <p>Transactions</p>
             </div>
-
-            <div className='option last'>
-                <BiLogOut />
-                <p>Log out</p>
+          </NavLink>
+          <NavLink to="finance-tools">
+            <div className="option">
+              <GiReceiveMoney />
+              <p>Financial Tools</p>
             </div>
-            
+          </NavLink>
+          <NavLink to="messaging">
+            <div className="option">
+              <HiOutlineChatBubbleLeftRight />
+              <p>Messages</p>
+            </div>
+          </NavLink>
         </div>
+
+        <div className="option last">
+          <MdOutlineLiveHelp />
+          <p>Help</p>
+        </div>
+
+        <div className="option last">
+          <BiLogOut />
+          <p>Log out</p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Sidebar;

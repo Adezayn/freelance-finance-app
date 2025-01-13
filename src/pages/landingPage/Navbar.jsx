@@ -8,7 +8,7 @@ import "../../compiled/header.css";
 
 const Navbar = ({ optionalStyle }) => {
   const [showLinks, setShowLinks] = useState(false);
-  // const url = window.location.href;
+  const url = window.location.href;
 
    const toggleLinks = () => {
      setShowLinks(!showLinks);
@@ -34,12 +34,12 @@ const Navbar = ({ optionalStyle }) => {
           </li>
         </ul>
         {/* <NavLink to="/signup"> */}
-        <NavLink to="/" className="no-display">
+        <NavLink to="/signup" className="no-display">
           <Button color="pink">Sign up</Button>
         </NavLink>
         {/* <p>{url}</p> */}
         {/* <NavLink to="/login"> */}
-        {/* <NavLink to="/">
+        <NavLink to="/login">
         <Button
           color={
             url === "http://localhost:3000/"
@@ -49,7 +49,7 @@ const Navbar = ({ optionalStyle }) => {
         >
           Login
         </Button>
-      </NavLink> */}
+      </NavLink>
         <button className="nav-toggle" onClick={toggleLinks}>
           <FaBars />
         </button>
