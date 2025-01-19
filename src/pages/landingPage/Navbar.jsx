@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import Button from "../../components/Button";
+// import Button from "../../components/Button";
 import logo from "../../assets/logo.svg";
 import "../../compiled/header.css";
 
 const Navbar = ({ optionalStyle }) => {
   const [showLinks, setShowLinks] = useState(false);
-  const url = window.location.href;
+  // const url = window.location.href;
 
    const toggleLinks = () => {
      setShowLinks(!showLinks);
