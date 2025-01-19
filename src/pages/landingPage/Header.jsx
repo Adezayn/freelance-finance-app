@@ -20,7 +20,8 @@ const Header = () => {
               Draft is a revolutionary mobile app built to help you manage your
               business easily and save you money.
             </p>
-            <NavLink to="/signup" className="no-display">
+            <NavLink to="/" className="no-display">
+            {/* <NavLink to="/signup" className="no-display"></NavLink> */}
               <Button color="blue" optionalStyle="style">
                 Register Now
                 <img src={arrowRight} alt="arrow-right" />
