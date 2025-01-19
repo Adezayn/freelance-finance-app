@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import arrowRight from "../../assets/arrow-right.svg";
 import headerPhone from "../../assets/header-phone.svg";
 import Button from "../../components/Button";
@@ -19,10 +20,12 @@ const Header = () => {
               Draft is a revolutionary mobile app built to help you manage your
               business easily and save you money.
             </p>
-            <Button color="blue" optionalStyle="style">
-              Register Now
-              <img src={arrowRight} alt="arrow-right" />
-            </Button>
+            <NavLink to="/signup" className="no-display">
+              <Button color="blue" optionalStyle="style">
+                Register Now
+                <img src={arrowRight} alt="arrow-right" />
+              </Button>
+            </NavLink>
           </div>
           <div className="header_container__section__two">
             <img src={headerPhone} alt="phone" />

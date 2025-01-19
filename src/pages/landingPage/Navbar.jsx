@@ -33,12 +33,10 @@ const Navbar = ({ optionalStyle }) => {
             <a href="#pricing">Pricing</a>
           </li>
         </ul>
-        {/* <NavLink to="/signup"> */}
-        <NavLink to="/signup" className="no-display">
+      
+        {/* <NavLink to="/signup" className="no-display">
           <Button color="pink">Sign up</Button>
         </NavLink>
-        {/* <p>{url}</p> */}
-        {/* <NavLink to="/login"> */}
         <NavLink to="/login">
         <Button
           color={
@@ -49,7 +47,7 @@ const Navbar = ({ optionalStyle }) => {
         >
           Login
         </Button>
-      </NavLink>
+      </NavLink> */}
         <button className="nav-toggle" onClick={toggleLinks}>
           <FaBars />
         </button>
@@ -70,9 +68,9 @@ const Navbar = ({ optionalStyle }) => {
                 <a href="#pricing">Pricing</a>
               </li>
             </ul>
-            <NavLink to="/" className="nav-menu-btn">
+            {/* <NavLink to="/" className="nav-menu-btn">
               <Button color="pink">Sign up</Button>
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       )}
